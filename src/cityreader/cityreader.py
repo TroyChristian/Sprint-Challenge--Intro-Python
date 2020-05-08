@@ -1,4 +1,5 @@
-# Create a class to hold a city location. Call the class "City". It should have
+
+#  Create a class to hold a city location. Call the class "City". It should have
 # fields for name, lat and lon (representing latitude and longitude).
 
 
@@ -14,6 +15,23 @@
 #
 # Note that the first line of the CSV is header that describes the fields--this
 # should not be loaded into a City object.
+###MY NOTES:
+# city,state_name,county_name,lat,lng,population,density,timezone,zips
+# Seattle,Washington,King,47.6217,-122.3238,3541236,3243,America/Los_Angeles,98109 98108 98104 98107 98106 98101 98103 98102 98105 98154 98122 98121 98126 98125 98178 98174 98177 98144 98146 98195 98199 98118 98119 98116 98117 98115 98112 98164 98134 98136 98133 98111 98113 98114 98124 98127 98129 98139 98141 98145 98161 98165 98170 98175 98181 98185 98191 98194
+
+# Open CSV file
+path = "/Users/lambda_school_loaner_219/Documents/Python/Sprint-Challenge--Intro-Python/src/cities.csv"
+
+
+
+
+class City():
+ def __init__(self, name, lat, lon):
+  self.name = name 
+  self.lat = lat
+  self.lon = lon 
+
+
 cities = []
 
 def cityreader(cities=[]):
